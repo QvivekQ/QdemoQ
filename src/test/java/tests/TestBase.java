@@ -19,6 +19,8 @@ public class TestBase {
 		BasicConfigurator.configure();
 
 		System.setProperty("webdriver.chrome.driver", "/home/qolsys/Driver/chromedriver");
+		ChromeOptions chromeOptions = new ChromeOptions();
+ 		chromeOptions.addArguments("--headless");
 		driver = new ChromeDriver();
 		// To maximize browser
 		driver.manage().window().maximize();
