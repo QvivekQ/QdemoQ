@@ -9,6 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'chmod +x chromedriver'
                 sh 'mvn -f pom.xml clean install'
             }
         }
