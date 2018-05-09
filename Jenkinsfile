@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'mvn -X clean install'
+                sh 'mvn -f pom.xml clean install'
             }
         }
         stage('Test') {
