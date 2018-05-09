@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'chmod +x chromedriver'
+                sh 'chmod 777 chromedriver'
                 sh 'mvn -f pom.xml clean install'
             }
         }
