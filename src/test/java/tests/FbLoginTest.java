@@ -9,7 +9,7 @@ import pages.FbLoginPage;
 
 public class FbLoginTest extends TestBase {
 
-	 @Test
+	 //@Test
 
 	//@Test(dataProviderClass = CutomDataProvider.class, dataProvider = "empLogin")
 	//public void FBLogin(String arg1, String arg2) {
