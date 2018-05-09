@@ -24,7 +24,7 @@ public class TestBase {
  		chromeOptions.addArguments("--headless");
 		driver = new ChromeDriver();
 		// To maximize browser
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		// Implicit wait
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		// To open facebook
